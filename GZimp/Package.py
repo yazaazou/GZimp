@@ -68,7 +68,7 @@ class Images():
 
             img=  image.imread(sample[i])
             img = img[crop : -1*crop , crop : -1*crop]
-            img = cv2.normalize(img, None, 0, 1.0, cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+            #img = cv2.normalize(img, None, 0, 1.0, cv2.NORM_MINMAX, dtype=cv2.CV_32F)
             img = np.expand_dims(img, axis=0)
             images[i] = img
         del i
